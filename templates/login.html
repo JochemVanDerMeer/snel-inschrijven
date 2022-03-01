@@ -1,0 +1,23 @@
+{% import "bootstrap/wtf.html" as wtf %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='login.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+  </head>
+  <body>
+    <div class="loginpage">
+    <form class="form-signin" method="POST" action="/login">
+        <h1>Admin Dashboard</h1>
+        <h3>For demonstration purposes, you can use the password "administrator".</h3>
+      {{form.hidden_tag()}} {{ wtf.form_field(form.password)}}
+      <button type="submit">Sign in</button>
+    </form>
+  </div>
+  </body>
+</html>

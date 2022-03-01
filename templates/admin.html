@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='admin.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <script src="https://kit.fontawesome.com/c5b1839240.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-color: #1FC58E; color:#191414">
+    <div><img src="{{ url_for('static',filename='logo.png') }}" width="500px" class="center"></div>
+    <div class="content">
+    <h1 class="title">Manage reservations</h1>
+    <p>
+      On this page you can add, edit or remove slots for reservations.
+    </p>
+    <p class="res" hidden>{{slots}}</p>
+    <p class="spots">{{spots}}</p>
+    <div class="days">
+    <div class="row">
+        <div class = "day">.col-md-3</div>
+        <div class = "day">.col-md-3</div>
+        <div class = "day">.col-md-3</div>
+        <div class = "day">.col-md-3</div>
+      </div>
+      <div class="row">
+        <div class = "day">.col-md-3</div>
+        <div class = "day">.col-md-3</div>
+        <div class = "day">.col-md-3</div>
+        <div class = "day">.col-md-3</div>
+      </div>
+      <div class="row">
+        <div class = "day">.col-md-3</div>
+        <div class = "day">.col-md-3</div>
+        <div class = "day">.col-md-3</div>
+        <div class = "day">.col-md-3</div>
+      </div>
+    </div>
+
+      <div class="row">
+        <div><i class="fas fa-arrow-circle-left" id="left-arrow"></i></div>
+        <div><i class="fas fa-arrow-circle-right" id="right-arrow"></i></div>
+      </div>    
+
+      <div class="deleteSpot">
+        <form class = addForm method = "POST">
+          <div class = "deleteSpotInfo" hidden>
+          <label>Datum</label>
+          <input class = "deleteSpotDate" type="text" name="spotdate">
+          <label>Tijd</label>
+          <input type="text" class = "deleteTime" placeholder="00:00" name = "spottime">
+        </div>
+        <div class="deleteSpotSubmit" hidden>
+          <p class="spotInfo">Do you want to delete this spot?</p>
+          <input type="submit" class="submitDeleteSpot" name = "form-name" value = "Delete">
+        </div>
+        </form>
+      </div>
+
+      <div class="clearSpot"> 
+      <form method = "POST">
+        <div class = "clearSpotInfo" hidden>
+        <label>Datum</label>
+        <input class = "clearSpotDate" type="text" name="spotdate">
+        <label>Tijd</label>
+        <input type="text" class = "deleteTime" placeholder="00:00" name = "spottime">
+      
+      <div class="clearSpotSubmit" hidden>
+        <p class="spotInfo">Do you want to clear this spot? </p><br/>
+        <input type="submit" class="submitClearSpot" name = "form-name" value = "clearForm">
+      </div>
+      </form> 
+    </div>
+      
+      <div class="chooseSpot" hidden>
+        <form method = "POST">
+          <label>Datum</label>
+          <input class = "chosenDateForSpot" type="text" name="spotdate"></br>
+          <label>Start time:</label>
+          <input type="time" class = "starttime" name="spotstart" min="00:00" max="23:59" required>
+          <label>End time:</label>
+          <input type="time" class = "endtime" name="spotend" min="00:00" max="23:59" required></br>
+          <input type="submit" class="submitSpot" name = "form-name" value = "Submit">
+        </form>
+      </div>
+      <div class = "adminAddSpot">
+        <p class = "addOrRemove">
+          Add a reservation slot on this day
+        </p>
+      </div>
+      <div class="timefield" hidden>
+          <div class="date"></div>
+          
+          
+
+
+      </div> 
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='admin.js') }}"></script>
+</body>
+
+</html>

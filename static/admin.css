@@ -1,0 +1,93 @@
+body {
+    height: 1700px;
+    background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.day {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    border-radius: 10px;
+    background-color: #f8f9d2;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 122px;
+    max-width: 100%;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+.enrollments {
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    height: 830px;
+    width: 500px;
+    background-color:beige;
+}
+
+.title {
+    text-align: center;
+}
+
+.slot {
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 50px;
+    width: 400px;
+    background-color: darkgrey;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#right-arrow {
+    position: absolute;
+    right: 0px;
+    width: 710px;
+}
+
+.timefield {
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    height: 830px;
+    width: 500px;
+    background-color:beige;
+}
+
+
+
+.datetitle {
+    text-align: center;
+}
+
+.spot {
+    background-color: rgba(106, 106, 106, 0.558);
+    margin-bottom: 10px; 
+}
+
+.adminAddSpot {
+    background-color: lightblue;
+}
+
+.addOrRemove {
+    margin-top: 20px;
+}

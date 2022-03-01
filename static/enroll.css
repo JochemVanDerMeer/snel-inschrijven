@@ -1,0 +1,102 @@
+body {
+    padding-bottom: 150px;
+    height: 100%;
+    background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+html {
+    min-height:100%;
+}
+
+.containerForm {
+    width: 300px;
+    clear: both;
+
+  }
+  
+  .containerForm input {
+    width: 100%;
+    clear: both;
+  }
+
+
+.emailbox {
+    margin-top: 20px;
+}
+
+#left-arrow {
+    margin-right: 75px;
+}
+
+
+.navigate {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    text-align: center; 
+}
+
+
+
+.namebox {
+    margin-top: 20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.day {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    border-radius: 10px;
+    background-color: #f8f9d2;
+    background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 122px;
+    max-width: 100%;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+
+.timefield {
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    height: 830px;
+    width: 500px;
+    background-color:beige;
+}
+
+.title {
+    text-align: center;
+}
+
+.slot {
+    border-radius: 10px;
+    height: 50px;
+    width: 400px;
+    background-color: darkgrey;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.datetitle {
+    text-align: center;
+}
+
