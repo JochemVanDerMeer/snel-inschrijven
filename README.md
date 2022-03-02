@@ -14,7 +14,7 @@ https://snelinschrijven.herokuapp.com/enroll
 
 Users can choose a slot to reserve which the administrator has created. Users have to fill in a name and e-mailaddress. After having selected a slot to reserve, the users gets a confirmation e-mail with the details of the reservation.
 
-<img src="https://github.com/JochemVanDerMeer/snelinschrijven/blob/master/static/screenshot1.png?raw=true" width="300">
+<img src="https://github.com/JochemVanDerMeer/snel-inschrijven/blob/main/static/screenshot1.png" width="300">
 
 ### Administrator page
 https://snelinschrijven.herokuapp.com/admin
@@ -25,7 +25,7 @@ The administrator can select a day to add or remove reservations. After selectin
 
 The administrator can click the grey button to add a new reservation slot to the selected day. Clicking this button shows a menu in which the administrator can fill in the desired start and end time of the reservation slot. After the administrator submits the form, the reservation slot becomes visible for users who can then select this slot to make a reservation.
 
-<img src="https://github.com/JochemVanDerMeer/snelinschrijven/blob/master/static/screenshot2.png?raw=true" width="300">
+<img src="https://github.com/JochemVanDerMeer/snel-inschrijven/blob/main/static/screenshot2.png" width="300">
 
 ## Reflection
 
